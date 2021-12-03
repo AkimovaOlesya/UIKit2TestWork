@@ -19,22 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabBarController = UITabBarController()
 
-        let firstViewController = UIViewController()
-        firstViewController.view.backgroundColor = .systemRed
+        let firstViewController = FirstViewController()
         firstViewController.tabBarItem = UITabBarItem(title: "First", image: .checkmark, tag: 0)
+        let firstNavigationController = UINavigationController(rootViewController: firstViewController)
 
-        let secondViewController = UIViewController()
-        let secondNavigationController = UINavigationController(rootViewController: secondViewController)
-        secondViewController.view.backgroundColor = .systemGreen
+        let secondViewController = SecondViewController()
+      //  let secondNavigationController = UINavigationController(rootViewController: secondViewController)
+        //secondViewController.view.backgroundColor = .systemGreen
         secondViewController.tabBarItem = UITabBarItem(title: "Second", image: .remove, tag: 1)
 
-        let thirdViewController = UIViewController()
-        thirdViewController.view.backgroundColor = .systemYellow
+        let thirdViewController = ThirdViewController()
+      //  thirdViewController.view.backgroundColor = .systemYellow
         thirdViewController.tabBarItem = UITabBarItem(title: "Third", image: .add, tag: 2)
 
         tabBarController.setViewControllers([
-            firstViewController,
-            secondNavigationController,
+            firstNavigationController,
+            secondViewController,
             thirdViewController
         ], animated: true)
 

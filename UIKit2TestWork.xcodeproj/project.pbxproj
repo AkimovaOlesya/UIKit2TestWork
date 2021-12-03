@@ -12,6 +12,12 @@
 		5BD5B7022757D5780081027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD5B7002757D5780081027E /* Main.storyboard */; };
 		5BD5B7042757D57C0081027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD5B7032757D57C0081027E /* Assets.xcassets */; };
 		5BD5B7072757D57C0081027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD5B7052757D57C0081027E /* LaunchScreen.storyboard */; };
+		5BD5B7102758B89F0081027E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B70F2758B89F0081027E /* FirstViewController.swift */; };
+		5BD5B7132758B8C40081027E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B7122758B8C40081027E /* SecondViewController.swift */; };
+		5BD5B7152758CF8C0081027E /* FirstChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B7142758CF8C0081027E /* FirstChildViewController.swift */; };
+		5BD5B7172759EA680081027E /* SecondChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B7162759EA680081027E /* SecondChildViewController.swift */; };
+		5BD5B71A2759EFAF0081027E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B7192759EFAF0081027E /* ThirdViewController.swift */; };
+		5BD5B71E2759EFDA0081027E /* ThirdChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5B71D2759EFDA0081027E /* ThirdChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5BD5B7032757D57C0081027E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD5B7062757D57C0081027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD5B7082757D57C0081027E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD5B70F2758B89F0081027E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5BD5B7122758B8C40081027E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5BD5B7142758CF8C0081027E /* FirstChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildViewController.swift; sourceTree = "<group>"; };
+		5BD5B7162759EA680081027E /* SecondChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChildViewController.swift; sourceTree = "<group>"; };
+		5BD5B7192759EFAF0081027E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5BD5B71D2759EFDA0081027E /* ThirdChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,9 @@
 		5BD5B6F92757D5780081027E /* UIKit2TestWork */ = {
 			isa = PBXGroup;
 			children = (
+				5BD5B70E2758B8730081027E /* First */,
+				5BD5B7112758B8AE0081027E /* Second */,
+				5BD5B7182759EF840081027E /* Third */,
 				5BD5B6FA2757D5780081027E /* AppDelegate.swift */,
 				5BD5B6FE2757D5780081027E /* ViewController.swift */,
 				5BD5B7002757D5780081027E /* Main.storyboard */,
@@ -62,6 +77,33 @@
 				5BD5B7082757D57C0081027E /* Info.plist */,
 			);
 			path = UIKit2TestWork;
+			sourceTree = "<group>";
+		};
+		5BD5B70E2758B8730081027E /* First */ = {
+			isa = PBXGroup;
+			children = (
+				5BD5B70F2758B89F0081027E /* FirstViewController.swift */,
+				5BD5B7142758CF8C0081027E /* FirstChildViewController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		5BD5B7112758B8AE0081027E /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				5BD5B7122758B8C40081027E /* SecondViewController.swift */,
+				5BD5B7162759EA680081027E /* SecondChildViewController.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		5BD5B7182759EF840081027E /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				5BD5B7192759EFAF0081027E /* ThirdViewController.swift */,
+				5BD5B71D2759EFDA0081027E /* ThirdChildViewController.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD5B7132758B8C40081027E /* SecondViewController.swift in Sources */,
+				5BD5B7102758B89F0081027E /* FirstViewController.swift in Sources */,
 				5BD5B6FF2757D5780081027E /* ViewController.swift in Sources */,
+				5BD5B71A2759EFAF0081027E /* ThirdViewController.swift in Sources */,
+				5BD5B7172759EA680081027E /* SecondChildViewController.swift in Sources */,
 				5BD5B6FB2757D5780081027E /* AppDelegate.swift in Sources */,
+				5BD5B7152758CF8C0081027E /* FirstChildViewController.swift in Sources */,
+				5BD5B71E2759EFDA0081027E /* ThirdChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
